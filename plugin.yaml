@@ -65,6 +65,14 @@ providers:
         default: "false"
         renderingOptions:
           groupName: Config
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -136,6 +144,14 @@ providers:
         renderingOptions:
           groupName: Config
           instance-scope-node-attribute: "kube-pod-shell"
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -198,6 +214,14 @@ providers:
         default: "/bin/bash"
         renderingOptions:
           groupName: Config
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -397,6 +421,14 @@ providers:
           groupName: Container
           displayType: MULTI_LINE
           codeSyntaxMode: yaml
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -563,6 +595,14 @@ providers:
         required: false
         renderingOptions:
           groupName: Container
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -628,6 +668,14 @@ providers:
         default: "default"
         description: "Namespace where the deployment will be created "
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -693,6 +741,14 @@ providers:
         default: "default"
         description: "Namespace where the deployment will be created "
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -770,6 +826,14 @@ providers:
         default: "10"
         description: "Sleep between retries"
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -847,6 +911,14 @@ providers:
         default: "10"
         description: "Sleep between retries"
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -921,6 +993,14 @@ providers:
         renderingOptions:
           displayType: CODE
           codeSyntaxMode: yaml
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -992,6 +1072,14 @@ providers:
         description: "Type"
         required: true
         values: Deployment,StatefulSet,ConfigMap,Service,Ingress,Job,StorageClass,PersistentVolume,PersistentVolumeClaim,Secret
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1135,6 +1223,14 @@ providers:
         required: false
         renderingOptions:
           groupName: Spec
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1278,6 +1374,14 @@ providers:
         required: false
         renderingOptions:
           groupName: Spec
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1343,6 +1447,14 @@ providers:
         default: "default"
         description: "Namespace where the deployment will be created "
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1594,6 +1706,14 @@ providers:
           groupName: Container
           displayType: MULTI_LINE
           codeSyntaxMode: yaml
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1659,6 +1779,14 @@ providers:
         default: "default"
         description: "Namespace where the deployment will be created "
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1724,6 +1852,14 @@ providers:
         default: "default"
         description: "Namespace where the deployment will be created "
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1812,6 +1948,14 @@ providers:
         default: true
         description: "Show job log from kubernetes"
         required: false
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -1881,6 +2025,14 @@ providers:
         title: Follow Output
         description: "If it is enabled, the job will be following the output, like `tail -f`. The execution won't stop"
         required: false
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -2074,6 +2226,14 @@ providers:
           groupName: Container
           displayType: MULTI_LINE
           codeSyntaxMode: yaml
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -2136,6 +2296,14 @@ providers:
         title: "Namespace"
         description: "Namespace where the pod was created"
         required: false
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -2217,6 +2385,14 @@ providers:
         default: true
         description: "Show job log from kubernetes"
         required: false
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -2290,6 +2466,14 @@ providers:
         title: "Command"
         description: "Command to run"
         required: true
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
@@ -2378,6 +2562,14 @@ providers:
         title: Delete POD on fail?
         description: "Does delete pod if the script fail?"
         required: false
+      - name: env
+        type: FreeSelect
+        title: "Kubernetes Environment"
+        description: "Where the kubernetes is running"
+        values: incluster
+        required: false
+        renderingOptions:
+          groupName: Authentication
       - name: config_file
         type: String
         title: "Kubernetes Config File Path"
